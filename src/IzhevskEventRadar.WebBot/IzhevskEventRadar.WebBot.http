@@ -1,0 +1,6 @@
+@IzhevskEventRadar.WebBot_HostAddress = http://localhost:5244
+
+GET {{IzhevskEventRadar.WebBot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

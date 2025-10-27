@@ -416,3 +416,11 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/src/IzhevskEventRadar.Api/appsettings.Development.json
+/src/IzhevskEventRadar.Api/appsettings.json
+/src/IzhevskEventRadar.Bot/appsettings.Development.json
+/src/IzhevskEventRadar.Bot/appsettings.json
+/src/izhevskeventradar.webapp/package-lock.json
+/src/izhevskeventradar.webapp/package.json
+/src/IzhevskEventRadar.WebBot/appsettings.Development.json
+/src/IzhevskEventRadar.WebBot/appsettings.json

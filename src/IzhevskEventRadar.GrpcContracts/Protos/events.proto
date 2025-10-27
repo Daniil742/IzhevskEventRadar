@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+option csharp_namespace = "IzhevskEventRadar.GrpcContracts";
+
+service EventGrpcService {
+	rpc GetEventsByDate (EventsByDateRequest) returns (EventsByDateResponse);
+	rpc GetEventById (EventByIdRequest) returns (EventByIdResponse);
+}
+
+message EventsByDateRequest {
+	string date = 1;
+}
+
+message EventsByDateResponse {
+	repeated EventSummary events = 1;
+}
+
+message EventSummary {
+	int32 id = 1;
+	string title = 2;
+	string time = 3;
+	string location = 4;
+}
+
+message EventByIdRequest {
+    int32 event_id = 1;
+}
+
+message EventByIdResponse {
+	int32 id = 1;
+	string title = 2;
+	string description = 3;
+	string date = 4;
+	string location = 5;
+	double latitude = 6;
+	double longitude = 7;
+}
